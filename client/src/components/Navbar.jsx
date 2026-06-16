@@ -54,7 +54,7 @@ function Navbar() {
         <div className="profile-photo">
           {user.profileImage ? (
             <img
-              src={`http://localhost:5000/uploads/${user.profileImage}`}
+              src={`https://jobtracker-0b4q.onrender.com/api/uploads/${user.profileImage}`}
               alt="Profile"
               className="navbar-avatar"
             />
