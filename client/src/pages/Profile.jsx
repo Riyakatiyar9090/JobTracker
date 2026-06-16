@@ -115,7 +115,7 @@ function Profile() {
             <div className="profile-left">
               {user.profileImage ? (
                 <img
-                  src={`https://jobtracker-0b4q.onrender.com/api/uploads/${user.profileImage}`}
+                  src={`https://jobtracker-0b4q.onrender.com/uploads/${user.profileImage}`}
                   alt="Profile"
                   className="avatar"
                   style={{
