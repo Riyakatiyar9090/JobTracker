@@ -1,0 +1,394 @@
+.jobs-page {
+  padding: 30px;
+}
+
+.jobs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.jobs-heading-box {
+  width: 430px;
+
+  padding: 20px 25px;
+
+  border-radius: 18px;
+
+  /* background-color: rgba(219, 234, 254, 0.55); */
+
+  border: 2px solid rgba(37, 99, 235, 0.25);
+
+  box-shadow:
+    0 6px 15px rgba(15, 23, 42, 0.12),
+    0 0 18px rgba(37, 99, 235, 0.18),
+    0 0 30px rgba(20, 184, 166, 0.12),
+    inset 0 0 12px rgba(37, 99, 235, 0.08);
+
+  margin-bottom: 30px;
+}
+
+.jobs-heading-box h1 {
+  margin: 0;
+
+  font-size: 30px;
+
+  font-weight: 800;
+
+  background: linear-gradient(135deg, #14b8a6, #2563eb);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+}
+
+.jobs-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Search + Filters */
+.jobs-controls select {
+  height: 50px;
+  min-width: 200px;
+  padding-left: 15px;
+
+  border: 2px solid rgba(37, 99, 235, 0.25);
+
+  border-radius: 16px;
+
+  font-size: 16px;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  padding-right: 50px;
+
+  background: rgba(255, 255, 255, 0.85)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16'%3E%3Cpath fill='%232563eb' d='M2 5l6 6 6-6'/%3E%3C/svg%3E")
+    no-repeat right 18px center;
+
+  box-shadow:
+    0 6px 15px rgba(15, 23, 42, 0.12),
+    0 0 18px rgba(37, 99, 235, 0.12),
+    inset 0 0 10px rgba(37, 99, 235, 0.05);
+
+  transition: all 0.3s ease;
+}
+.jobs-controls input {
+  height: 50px;
+  width: 300px;
+  min-width: 300px !important;
+
+  padding-left: 15px;
+
+  border: 2px solid rgba(37, 99, 235, 0.25);
+
+  border-radius: 16px;
+
+  font-size: 16px;
+
+  background: rgba(255, 255, 255, 0.85);
+
+  box-shadow:
+    0 6px 15px rgba(15, 23, 42, 0.12),
+    0 0 18px rgba(37, 99, 235, 0.12),
+    inset 0 0 10px rgba(37, 99, 235, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+/* Add Job Button */
+.add-btn {
+  height: 50px;
+  min-width: 160px;
+
+  border: 2px solid rgba(37, 99, 235, 0.25);
+
+  border-radius: 16px;
+
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 6px 15px rgba(15, 23, 42, 0.12),
+    0 0 18px rgba(37, 99, 235, 0.18),
+    inset 0 0 10px rgba(255, 255, 255, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.jobs-controls input:hover,
+.jobs-controls select:hover,
+.add-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 20px rgba(37, 99, 235, 0.18),
+    0 0 25px rgba(37, 99, 235, 0.2);
+}
+.jobs-controls input:focus,
+.jobs-controls select:focus {
+  outline: none;
+
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 4px rgba(37, 99, 235, 0.12),
+    0 0 20px rgba(37, 99, 235, 0.2);
+}
+
+/* Table */
+.jobs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.jobs-table th {
+  background: #f5f7fb;
+  padding: 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.jobs-table td {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  font-size: 16px;
+}
+
+/* Status Badges */
+.status-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-badge.applied {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.status-badge.interview {
+  background: #fef3c7;
+  color: #f59e0b;
+}
+
+.status-badge.rejected {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.status-badge.accepted {
+  background: #d1fae5;
+  color: #10b981;
+}
+
+/* Website Button */
+.open-btn {
+  background: #22c55e;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.open-btn:hover {
+  opacity: 0.9;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.view-btn,
+.edit-btn,
+.delete-btn {
+  width: 100px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.edit-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.view-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+  opacity: 0.9;
+}
+
+.pagination {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination button {
+  width: 120px;
+  height: 45px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  font-size: 16px;
+  font-weight: 600;
+}
+/* DARK MODE - JOBS PAGE */
+
+.dropdown-selected {
+  height: 50px;
+  font-size: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid rgba(37, 99, 235, 0.25);
+
+  box-shadow:
+    0 6px 15px rgba(15, 23, 42, 0.12),
+    0 0 18px rgba(37, 99, 235, 0.12),
+    inset 0 0 10px rgba(37, 99, 235, 0.05);
+
+  padding: 0 18px;
+
+  background: rgba(255, 255, 255, 0.85);
+  margin-top: 4px;
+
+  /* border: 2px solid rgba(37, 99, 235, 0.25); */
+
+  border-radius: 16px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 6px 15px rgba(15, 23, 42, 0.12),
+    0 0 18px rgba(37, 99, 235, 0.12),
+    inset 0 0 10px rgba(37, 99, 235, 0.05);
+}
+.dropdown-selected.open {
+  border: 2px solid #2563eb;
+
+  box-shadow:
+    0 0 0 4px rgba(37, 99, 235, 0.12),
+    0 0 20px rgba(37, 99, 235, 0.2);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 58px;
+  left: 0;
+
+  width: 100%;
+
+  background: white;
+
+  border: 2px solid #2563eb;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  z-index: 999;
+
+  box-shadow:
+    0 6px 15px rgba(15, 23, 42, 0.12),
+    0 0 18px rgba(37, 99, 235, 0.18);
+
+  margin-top: 4px;
+}
+.dropdown-item {
+  padding: 10px 18px;
+  font-size: 14px; /* reduce text size */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dropdown-arrow {
+  font-size: 10px;
+}
+
+.dropdown-item:hover {
+  background: #f1f5f9;
+}
+.dropdown-item.active {
+  background: #c7ebe8;
+  color: #14b8a6;
+  font-weight: 600;
+}
+.jobs-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.jobs-controls input {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.custom-dropdown {
+  width: 180px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.jobs-controls select {
+  width: 180px;
+  min-width: 180px;
+  flex-shrink: 0;
+}
+
+.add-btn {
+  width: 160px;
+  flex-shrink: 0;
+}
